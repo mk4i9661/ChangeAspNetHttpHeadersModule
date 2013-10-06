@@ -18,7 +18,7 @@ namespace ChangeAspNetHttpHeadersModule
         }
 
         void context_PreSendRequestHeaders(object sender, EventArgs e) {
-            HttpContext.Current.Response.Headers.Set("Server", "B-baka, it's not like I changed this header especially for you or anything!");
+            HttpContext.Current.Response.Headers.Set("Server", "I-It's not like I changed this header especially for you or anything you b-baka!");
             HttpContext.Current.Response.Headers.Remove("x-aspnet-version");
             HttpContext.Current.Response.Headers.Remove("x-aspnetmvc-version");
         }
